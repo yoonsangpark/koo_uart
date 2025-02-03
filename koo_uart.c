@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 
     //while (1) {
 
-        printf(">> TX\n");
+        printf(">> TX : %s\n", tx_buf);
         /* write uart */
         ret = write(fd, tx_buf, sizeof(tx_buf));
         if (ret != sizeof(tx_buf))
